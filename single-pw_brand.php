@@ -33,6 +33,7 @@ if($_POST['update-content']) {
   add_post_meta($update_id, 'pw_update_link', $_POST['update-link']);
 
   // Upload the image. Update the meta box in the backend accordingly.
+  print_r($_FILES);
   if($_FILES) {
     echo 'Entering file loop!';
     foreach ($_FILES as $file => $array) {
@@ -116,10 +117,11 @@ $random_person_image = get_random_elements($person_images, 1);
 
 <?php get_header(); ?>
 
-<div class="update-contianer">
-  <header>
+<div class="update-container">
+  <header class="update-brand-header">
     <div class="update-brand-info"> <!-- This should probably have a more describing class name -->
-      <h2>Brand: <?= $brand_object->post_title ?></h2>
+      <h2 class="page-title">Generator</h2>
+      <p class="brand-name">Brand: <?= $brand_object->post_title ?></p>
       <p class="update-type-reminder"><?= $update_type_reminder; ?></p>
     </div>
 
@@ -130,21 +132,23 @@ $random_person_image = get_random_elements($person_images, 1);
         so that the user can't upload multiple images and make mistakes.
       -->
       <?php foreach ($brand_logo as $bl): ?>
-        <img src="<?= $bl['url']; ?>" />
+        <!-- <img src="<?= $bl['url']; ?>" /> -->
       <?php endforeach; ?>
 
-      <span class="brand-dna-1"><?= $brand_meta['pw_brand_dna-1-title'][0]; ?></span>
-      <span class="brand-dna-2"><?= $brand_meta['pw_brand_dna-2-title'][0]; ?></span>
-      <span class="brand-dna-3"><?= $brand_meta['pw_brand_dna-3-title'][0]; ?></span>
-      <span class="brand-dna-4"><?= $brand_meta['pw_brand_dna-4-title'][0]; ?></span>
+      <p class="brand-dna-1"><?= $brand_meta['pw_brand_dna-1-title'][0]; ?></p>
+      <p class="brand-dna-2"><?= $brand_meta['pw_brand_dna-2-title'][0]; ?></p>
+      <p class="brand-dna-3"><?= $brand_meta['pw_brand_dna-3-title'][0]; ?></p>
+      <p class="brand-dna-4"><?= $brand_meta['pw_brand_dna-4-title'][0]; ?></p>
 
 
     </div>
   </header>
 
   <div class="update-inspiration">
-    <img src=""> <!-- Fetch an image-->
-    <img src="<?= $random_person_image['url']; ?>" />
+    <!-- <img src="">  Fetch an image -->
+    <!-- <img src="<?= $random_person_image['url']; ?>" class="inspiration-image"> -->
+    <img src="<?= bloginfo('template_url'); ?>/img/test.png" class="inspiration-image">
+
     <?php foreach ($random_inspiration_words as $key => $riw): ?>
       <span class="inspiration-word-<?= $key + 1; ?>"><?= $riw; ?></span>
     <?php endforeach; ?>
@@ -179,6 +183,8 @@ $random_person_image = get_random_elements($person_images, 1);
   <header class="persona-information">
     <p class="person-name">Mød <?= $person->post_title; ?> - han skal finde din update interessant</p>
     <img src="<?= $person_photo['url']; ?>" class="person-image" /> <!-- Fetch the persons image -->
+
+
   </header>
 
   <?php foreach($random_person_updates as $rpu): ?>

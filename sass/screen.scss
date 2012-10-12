@@ -1,0 +1,190 @@
+$desktop-view: 1240px;
+
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+// Import CSS3 modules
+@import "compass/css3/box-shadow";
+
+@font-face {
+    font-family: 'maven_pro_light_100regular';
+    src: url('../fonts/mavenprolight-100-webfont.eot');
+    src: url('../fonts/mavenprolight-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mavenprolight-100-webfont.woff') format('woff'),
+         url('../fonts/mavenprolight-100-webfont.ttf') format('truetype'),
+         url('../fonts/mavenprolight-100-webfont.svg#maven_pro_light_100regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'maven_pro_light_200regular';
+    src: url('../fonts/mavenprolight-200-webfont.eot');
+    src: url('../fonts/mavenprolight-200-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mavenprolight-200-webfont.woff') format('woff'),
+         url('../fonts/mavenprolight-200-webfont.ttf') format('truetype'),
+         url('../fonts/mavenprolight-200-webfont.svg#maven_pro_light_200regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'maven_pro_light_300regular';
+    src: url('../fonts/mavenprolight-300-webfont.eot');
+    src: url('../fonts/mavenprolight-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mavenprolight-300-webfont.woff') format('woff'),
+         url('../fonts/mavenprolight-300-webfont.ttf') format('truetype'),
+         url('../fonts/mavenprolight-300-webfont.svg#maven_pro_light_300regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background: url('../img/bgnoise.png');
+  color: #8a8d8c;
+  font-family: "maven_pro_light_200regular", sans-serif;
+  font-size: 18px;
+}
+
+.page-wrapper {
+  @include container;
+  // background: url('../img/grid.png');
+
+  @media screen and (max-width: $desktop-view) {
+    width: 910px;
+  }
+}
+
+.page-header-container {
+  @include single-box-shadow(#666, 0, 0, 7px, 3px);
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #666;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.page-header {
+  @include container;
+  //background: url('../img/grid.png');
+  @media screen and (max-width: $desktop-view) {
+    width: 910px;
+  }
+  height: 32px;
+}
+
+.primary-navigation-container {
+  @include column(28, true);
+
+  @media screen and (max-width: $desktop-view) {
+    @include column(21, true);
+  }
+  // @media screen and (max-width: 1200px) {
+  //   @include column(22, true);
+  // }
+}
+
+.patchwork-logo {
+  @include column(2);
+  margin-top: 2px;
+}
+
+.primary-navigation {
+  list-style-type: none;
+  float: right;
+  //margin-right: span(1) + $blueprint-grid-margin;
+
+  li {
+    float: left;
+
+    a {
+      background: rgba(0, 0, 0, 0.2);
+      border-left: 1px solid #999;
+      color: #fff;
+      display: block;
+      font-family: "Verdana", sans-serif;
+      font-size: 0.8em;
+      font-weight: bold;
+      line-height: 32px;
+      padding: 0 20px;
+      text-decoration: none;
+    }
+
+    &:first-child a { border-left: none; }
+  }
+}
+
+.container {
+  @include column(30, true);
+
+  @media screen and (max-width: $desktop-view) {
+    @include column(24, true);
+  }
+}
+
+.update-container {
+  @include column(23);
+}
+
+.update-brand-header {
+  @include column(23);
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 20px;
+}
+
+// This should probably be renamed
+.update-brand-info {
+  @include column(15);
+}
+
+.page-title {
+  font-family: "maven_pro_light_200regular", sans-serif;
+  font-size: 50px;
+}
+
+.brand-name {
+  margin-bottom: 30px;
+}
+
+.brand-dna {
+  @include column(5, true);
+
+  background: url("../img/bubble.png") no-repeat;
+  background-size: contain;
+  color: #fff;
+  height: 200px;
+  margin-left: span(1) + $blueprint-grid-margin;
+  margin-right: span(2) + $blueprint-grid-margin;
+  padding-top: 31px;
+  text-align: center;
+
+  p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.brand-persona {
+  @include column(6, true);
+  @include single-box-shadow(#fff, 0px, -2px, 1px, 1px);
+  border-left: 1px solid #ccc;
+  padding-left: 24px;
+  margin-left: 15px;
+
+  @media screen and (max-width: $desktop-view) {
+    display: none;
+  }
+}
+
+.inspiration-image {
+  @include column(10);
+}

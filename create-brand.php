@@ -61,7 +61,6 @@
 </script>
 
 <h2><?php the_title(); ?></h2>
-
 <form id="create-brand-form" method="POST" enctype="multipart/form-data" target="create-brand-target">
   <div class="brand-information">
       <input type="text" name="brand-name" placeholder="Brand navn">
@@ -78,7 +77,7 @@
   </div>
 
   <div class="brand-visual">
-    <input type="file">
+    <input type="file" name="lala">
     <input type="text" id="color" name="color-1" value="#123456" />
     <div id="colorpicker"></div>
     <input type="text" id="color-2" name="color-2" value="#123456" />

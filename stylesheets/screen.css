@@ -1,0 +1,278 @@
+/* line 4, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* line 18, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+.bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
+div, span, object, iframe, p,
+pre, a, abbr, acronym, address,
+code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend,
+caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* line 20, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 21, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  quotes: "" ""; }
+  /* line 67, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+/* line 22, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  float: none !important;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 23, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+/* line 24, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none; }
+
+@font-face {
+  font-family: 'maven_pro_light_100regular';
+  src: url("../fonts/mavenprolight-100-webfont.eot");
+  src: url("../fonts/mavenprolight-100-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-100-webfont.woff") format("woff"), url("../fonts/mavenprolight-100-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-100-webfont.svg#maven_pro_light_100regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'maven_pro_light_200regular';
+  src: url("../fonts/mavenprolight-200-webfont.eot");
+  src: url("../fonts/mavenprolight-200-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-200-webfont.woff") format("woff"), url("../fonts/mavenprolight-200-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-200-webfont.svg#maven_pro_light_200regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'maven_pro_light_300regular';
+  src: url("../fonts/mavenprolight-300-webfont.eot");
+  src: url("../fonts/mavenprolight-300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-300-webfont.woff") format("woff"), url("../fonts/mavenprolight-300-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-300-webfont.svg#maven_pro_light_300regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 52, ../sass/screen.scss */
+body {
+  background: url("../img/bgnoise.png");
+  color: #8a8d8c;
+  font-family: "maven_pro_light_200regular", sans-serif;
+  font-size: 18px; }
+
+/* line 59, ../sass/screen.scss */
+.page-wrapper {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1; }
+  @media screen and (max-width: 1240px) {
+    /* line 59, ../sass/screen.scss */
+    .page-wrapper {
+      width: 910px; } }
+
+/* line 68, ../sass/screen.scss */
+.page-header-container {
+  -webkit-box-shadow: 0 0 7px 3px #666666;
+  -moz-box-shadow: 0 0 7px 3px #666666;
+  box-shadow: 0 0 7px 3px #666666;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #666;
+  margin-bottom: 25px;
+  overflow: hidden; }
+
+/* line 76, ../sass/screen.scss */
+.page-header {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  height: 32px; }
+  @media screen and (max-width: 1240px) {
+    /* line 76, ../sass/screen.scss */
+    .page-header {
+      width: 910px; } }
+
+/* line 85, ../sass/screen.scss */
+.primary-navigation-container {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 1110px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .primary-navigation-container {
+    overflow-x: hidden; }
+  @media screen and (max-width: 1240px) {
+    /* line 85, ../sass/screen.scss */
+    .primary-navigation-container {
+      display: inline;
+      float: left;
+      margin-right: 0;
+      width: 830px; }
+      /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+      * html .primary-navigation-container {
+        overflow-x: hidden; } }
+
+/* line 96, ../sass/screen.scss */
+.patchwork-logo {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+  margin-top: 2px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .patchwork-logo {
+    overflow-x: hidden; }
+
+/* line 101, ../sass/screen.scss */
+.primary-navigation {
+  list-style-type: none;
+  float: right; }
+  /* line 106, ../sass/screen.scss */
+  .primary-navigation li {
+    float: left; }
+    /* line 109, ../sass/screen.scss */
+    .primary-navigation li a {
+      background: rgba(0, 0, 0, 0.2);
+      border-left: 1px solid #999;
+      color: #fff;
+      display: block;
+      font-family: "Verdana", sans-serif;
+      font-size: 0.8em;
+      font-weight: bold;
+      line-height: 32px;
+      padding: 0 20px;
+      text-decoration: none; }
+    /* line 122, ../sass/screen.scss */
+    .primary-navigation li:first-child a {
+      border-left: none; }
+
+/* line 126, ../sass/screen.scss */
+.container {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 1190px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .container {
+    overflow-x: hidden; }
+  @media screen and (max-width: 1240px) {
+    /* line 126, ../sass/screen.scss */
+    .container {
+      display: inline;
+      float: left;
+      margin-right: 0;
+      width: 950px; }
+      /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+      * html .container {
+        overflow-x: hidden; } }
+
+/* line 134, ../sass/screen.scss */
+.update-container {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 910px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .update-container {
+    overflow-x: hidden; }
+
+/* line 138, ../sass/screen.scss */
+.update-brand-header {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 910px;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 20px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .update-brand-header {
+    overflow-x: hidden; }
+
+/* line 145, ../sass/screen.scss */
+.update-brand-info {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 590px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .update-brand-info {
+    overflow-x: hidden; }
+
+/* line 149, ../sass/screen.scss */
+.page-title {
+  font-family: "maven_pro_light_200regular", sans-serif;
+  font-size: 50px; }
+
+/* line 154, ../sass/screen.scss */
+.brand-name {
+  margin-bottom: 30px; }
+
+/* line 158, ../sass/screen.scss */
+.brand-dna {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 190px;
+  background: url("../img/bubble.png") no-repeat;
+  background-size: contain;
+  color: #fff;
+  height: 200px;
+  margin-left: 40px;
+  margin-right: 80px;
+  padding-top: 31px;
+  text-align: center; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .brand-dna {
+    overflow-x: hidden; }
+  /* line 170, ../sass/screen.scss */
+  .brand-dna p {
+    font-size: 24px;
+    line-height: 30px; }
+
+/* line 176, ../sass/screen.scss */
+.brand-persona {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+  -webkit-box-shadow: 0px -2px 1px 1px white;
+  -moz-box-shadow: 0px -2px 1px 1px white;
+  box-shadow: 0px -2px 1px 1px white;
+  border-left: 1px solid #ccc;
+  padding-left: 24px;
+  margin-left: 15px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .brand-persona {
+    overflow-x: hidden; }
+  @media screen and (max-width: 1240px) {
+    /* line 176, ../sass/screen.scss */
+    .brand-persona {
+      display: none; } }
+
+/* line 188, ../sass/screen.scss */
+.inspiration-image {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .inspiration-image {
+    overflow-x: hidden; }

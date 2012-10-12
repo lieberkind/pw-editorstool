@@ -42,6 +42,11 @@ Add support for featured images
 //add_theme_support('post-thumbnails', array('pw_person'));
 
 /**
+Register navigation menus
+**/
+register_nav_menu('primary_navigation', 'Primary Navigation');
+
+/**
 Register post types
 **/
 require_once('post-types/post-type-pw_brand.php');
@@ -54,13 +59,13 @@ Custom functions
 **/
 
 // Restrict access to wp-admin for everyone but admins
-function restrict_admin(){
-  //if not administrator, kill WordPress execution and provide a message
-  if ( !current_user_can('administrator') ) {
-    wp_die( __('You are not allowed to access this part of the site') );
-  }
-}
-add_action( 'admin_init', 'restrict_admin', 1 );
+// function restrict_admin(){
+//   //if not administrator, kill WordPress execution and provide a message
+//   if ( !current_user_can('administrator') ) {
+//     wp_die( __('You are not allowed to access this part of the site') );
+//   }
+// }
+// add_action( 'admin_init', 'restrict_admin', 1 );
 
 // Pick $amount random elements from the $array. If the $array
 // has less than $amount elements, select them all.
