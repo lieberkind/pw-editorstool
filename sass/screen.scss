@@ -14,6 +14,9 @@ $desktop-view: 1240px;
 
 // Import CSS3 modules
 @import "compass/css3/box-shadow";
+@import "compass/css3/box-sizing";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
 
 @font-face {
     font-family: 'maven_pro_light_100regular';
@@ -149,6 +152,7 @@ body {
 .page-title {
   font-family: "maven_pro_light_200regular", sans-serif;
   font-size: 50px;
+  // line-height: 30px;
 }
 
 .brand-name {
@@ -185,6 +189,77 @@ body {
   }
 }
 
+.persona-title {
+  color: #8A8D8C;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  // text-decoration: underline;
+}
+
 .inspiration-image {
   @include column(10);
 }
+
+.update-form {
+  @include column(12);
+  @include push(1);
+
+}
+
+.update-form-title {
+  @include column(11);
+  @include push(1);
+  color: #8A8D8C;
+  //font-family: Verdana;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.update-content {
+  @include box-sizing(border-box);
+  //@include column(11);
+
+  border: 1px solid #999;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+@mixin button() {
+  @include background(linear-gradient(top, #fff, #eee));
+  @include border-radius(2px);
+  @include single-box-shadow(#ddd, 2px, 2px, 1px, 0px);
+  border: 1px solid #999;
+  color: #777;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+
+.update-link {
+  //@include column(11);
+
+  border: 1px solid #999;
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+.update-upload-image {
+  @include column(11);
+}
+
+.submit-update {
+  @include button;  
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+
+
+
+

@@ -154,7 +154,7 @@ $random_person_image = get_random_elements($person_images, 1);
     <?php endforeach; ?>
   </div>
 
-  <h3>Indsæt update</h3> <!-- Denne overskrift skal ikke være her... -->
+  <h3 class="update-form-title">Skriv ny update</h3> <!-- Denne overskrift skal ikke være her... LOL! JO DEN SKAL!-->
 
   <!-- This can probably be hacked by writing your own form... -->
   <?php if(pw_currentusercan("create", "update", $brand_id)): ?>
@@ -162,10 +162,10 @@ $random_person_image = get_random_elements($person_images, 1);
       <input type="hidden" name="brand-id" value="<?= $brand_id; ?>">
       <input type="hidden" name="brand-name" value="<?= $brand_name; ?>">
       <input type="hidden" name="update-type" value="<?= $update_type; ?>">
-      <textarea name="update-content">CONTENT</textarea>
-      <input placeholder="Remeber http://" type="text" name="update-link">
-      <input type="file" name="update-image">
-      <input type="submit" value="Gem update">
+      <textarea name="update-content" class="update-content" placeholder="Skriv statusopdatering her..."></textarea>
+      <input placeholder="Evt. link" type="text" name="update-link" class="update-link">
+      <input type="file" name="update-image" class="update-upload-image">
+      <input type="submit" value="Gem update" class="submit-update">
 
       <!-- This iframe shoud be hidden with CSS -->
       <iframe src="" id="upload_target" name="upload_target"></iframe>
@@ -181,6 +181,7 @@ $random_person_image = get_random_elements($person_images, 1);
 
 <div class="brand-persona">
   <header class="persona-information">
+    <h3 class="persona-title">Persona</h3>
     <p class="person-name">Mød <?= $person->post_title; ?> - han skal finde din update interessant</p>
     <img src="<?= $person_photo['url']; ?>" class="person-image" /> <!-- Fetch the persons image -->
 

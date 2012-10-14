@@ -70,25 +70,25 @@ a img {
   font-weight: normal;
   font-style: normal; }
 
-/* line 52, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 body {
   background: url("../img/bgnoise.png");
   color: #8a8d8c;
   font-family: "maven_pro_light_200regular", sans-serif;
   font-size: 18px; }
 
-/* line 59, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .page-wrapper {
   width: 1190px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1; }
   @media screen and (max-width: 1240px) {
-    /* line 59, ../sass/screen.scss */
+    /* line 62, ../sass/screen.scss */
     .page-wrapper {
       width: 910px; } }
 
-/* line 68, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .page-header-container {
   -webkit-box-shadow: 0 0 7px 3px #666666;
   -moz-box-shadow: 0 0 7px 3px #666666;
@@ -98,7 +98,7 @@ body {
   margin-bottom: 25px;
   overflow: hidden; }
 
-/* line 76, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .page-header {
   width: 1190px;
   margin: 0 auto;
@@ -106,11 +106,11 @@ body {
   *zoom: 1;
   height: 32px; }
   @media screen and (max-width: 1240px) {
-    /* line 76, ../sass/screen.scss */
+    /* line 79, ../sass/screen.scss */
     .page-header {
       width: 910px; } }
 
-/* line 85, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .primary-navigation-container {
   display: inline;
   float: left;
@@ -120,7 +120,7 @@ body {
   * html .primary-navigation-container {
     overflow-x: hidden; }
   @media screen and (max-width: 1240px) {
-    /* line 85, ../sass/screen.scss */
+    /* line 88, ../sass/screen.scss */
     .primary-navigation-container {
       display: inline;
       float: left;
@@ -130,7 +130,7 @@ body {
       * html .primary-navigation-container {
         overflow-x: hidden; } }
 
-/* line 96, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .patchwork-logo {
   display: inline;
   float: left;
@@ -141,14 +141,14 @@ body {
   * html .patchwork-logo {
     overflow-x: hidden; }
 
-/* line 101, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .primary-navigation {
   list-style-type: none;
   float: right; }
-  /* line 106, ../sass/screen.scss */
+  /* line 109, ../sass/screen.scss */
   .primary-navigation li {
     float: left; }
-    /* line 109, ../sass/screen.scss */
+    /* line 112, ../sass/screen.scss */
     .primary-navigation li a {
       background: rgba(0, 0, 0, 0.2);
       border-left: 1px solid #999;
@@ -160,11 +160,11 @@ body {
       line-height: 32px;
       padding: 0 20px;
       text-decoration: none; }
-    /* line 122, ../sass/screen.scss */
+    /* line 125, ../sass/screen.scss */
     .primary-navigation li:first-child a {
       border-left: none; }
 
-/* line 126, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .container {
   display: inline;
   float: left;
@@ -174,7 +174,7 @@ body {
   * html .container {
     overflow-x: hidden; }
   @media screen and (max-width: 1240px) {
-    /* line 126, ../sass/screen.scss */
+    /* line 129, ../sass/screen.scss */
     .container {
       display: inline;
       float: left;
@@ -184,7 +184,7 @@ body {
       * html .container {
         overflow-x: hidden; } }
 
-/* line 134, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .update-container {
   display: inline;
   float: left;
@@ -194,7 +194,7 @@ body {
   * html .update-container {
     overflow-x: hidden; }
 
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .update-brand-header {
   display: inline;
   float: left;
@@ -206,7 +206,7 @@ body {
   * html .update-brand-header {
     overflow-x: hidden; }
 
-/* line 145, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .update-brand-info {
   display: inline;
   float: left;
@@ -216,16 +216,16 @@ body {
   * html .update-brand-info {
     overflow-x: hidden; }
 
-/* line 149, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .page-title {
   font-family: "maven_pro_light_200regular", sans-serif;
   font-size: 50px; }
 
-/* line 154, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .brand-name {
   margin-bottom: 30px; }
 
-/* line 158, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .brand-dna {
   display: inline;
   float: left;
@@ -242,12 +242,12 @@ body {
   /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
   * html .brand-dna {
     overflow-x: hidden; }
-  /* line 170, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   .brand-dna p {
     font-size: 24px;
     line-height: 30px; }
 
-/* line 176, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .brand-persona {
   display: inline;
   float: left;
@@ -263,11 +263,18 @@ body {
   * html .brand-persona {
     overflow-x: hidden; }
   @media screen and (max-width: 1240px) {
-    /* line 176, ../sass/screen.scss */
+    /* line 180, ../sass/screen.scss */
     .brand-persona {
       display: none; } }
 
-/* line 188, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
+.persona-title {
+  color: #8A8D8C;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+/* line 200, ../sass/screen.scss */
 .inspiration-image {
   display: inline;
   float: left;
@@ -276,3 +283,87 @@ body {
   /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
   * html .inspiration-image {
     overflow-x: hidden; }
+
+/* line 204, ../sass/screen.scss */
+.update-form {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -40px 1.5em 40px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .update-form {
+    overflow-x: hidden; }
+
+/* line 210, ../sass/screen.scss */
+.update-form-title {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 430px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 0 -40px 1.5em 40px;
+  color: #8A8D8C;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .update-form-title {
+    overflow-x: hidden; }
+
+/* line 220, ../sass/screen.scss */
+.update-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%; }
+
+/* line 241, ../sass/screen.scss */
+.update-link {
+  border: 1px solid #999;
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%; }
+
+/* line 250, ../sass/screen.scss */
+.update-upload-image {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 430px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .update-upload-image {
+    overflow-x: hidden; }
+
+/* line 254, ../sass/screen.scss */
+.submit-update {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
+  background: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+  background: -moz-linear-gradient(top, #ffffff, #eeeeee);
+  background: -o-linear-gradient(top, #ffffff, #eeeeee);
+  background: linear-gradient(top, #ffffff, #eeeeee);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 1px 0px #dddddd;
+  -moz-box-shadow: 2px 2px 1px 0px #dddddd;
+  box-shadow: 2px 2px 1px 0px #dddddd;
+  border: 1px solid #999;
+  color: #777;
+  padding: 7px 10px;
+  font-weight: bold; }
+
+/* line 258, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  font-style: italic; }
