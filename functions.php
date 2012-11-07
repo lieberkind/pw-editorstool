@@ -29,6 +29,7 @@ function pw_load_javascripts() {
   wp_enqueue_script('ajax-implementations', get_bloginfo('template_url') . '/js/ajax-implementation.js', array('jquery'));
 
   // Register the ajax-script colorpicker for use on the "Create Brand" page
+  wp_register_script('collapsible', get_bloginfo('template_url') . '/js/collapsible/jquery.collapsible.min.js', array('jquery'));
   wp_register_script('createbrand', get_bloginfo('template_url') . '/js/createbrand.js', array('jquery'));
   wp_register_script('farbtastic', get_bloginfo('template_url') . '/js/farbtastic/farbtastic.js', array('jquery'));
   wp_register_style('farbtastic-style', get_bloginfo('template_url') . '/js/farbtastic/farbtastic.css', false);

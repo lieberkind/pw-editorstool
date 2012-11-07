@@ -70,25 +70,25 @@ a img {
   font-weight: normal;
   font-style: normal; }
 
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 body {
   background: url("../img/bgnoise.png");
   color: #8a8d8c;
   font-family: "maven_pro_light_200regular", sans-serif;
   font-size: 18px; }
 
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .page-wrapper {
   width: 1190px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1; }
   @media screen and (max-width: 1240px) {
-    /* line 62, ../sass/screen.scss */
+    /* line 63, ../sass/screen.scss */
     .page-wrapper {
       width: 910px; } }
 
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .page-header-container {
   -webkit-box-shadow: 0 0 7px 3px #666666;
   -moz-box-shadow: 0 0 7px 3px #666666;
@@ -98,7 +98,7 @@ body {
   margin-bottom: 25px;
   overflow: hidden; }
 
-/* line 79, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .page-header {
   width: 1190px;
   margin: 0 auto;
@@ -106,11 +106,11 @@ body {
   *zoom: 1;
   height: 32px; }
   @media screen and (max-width: 1240px) {
-    /* line 79, ../sass/screen.scss */
+    /* line 80, ../sass/screen.scss */
     .page-header {
       width: 910px; } }
 
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .primary-navigation-container {
   display: inline;
   float: left;
@@ -120,7 +120,7 @@ body {
   * html .primary-navigation-container {
     overflow-x: hidden; }
   @media screen and (max-width: 1240px) {
-    /* line 88, ../sass/screen.scss */
+    /* line 89, ../sass/screen.scss */
     .primary-navigation-container {
       display: inline;
       float: left;
@@ -130,7 +130,7 @@ body {
       * html .primary-navigation-container {
         overflow-x: hidden; } }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .patchwork-logo {
   display: inline;
   float: left;
@@ -141,14 +141,14 @@ body {
   * html .patchwork-logo {
     overflow-x: hidden; }
 
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .primary-navigation {
   list-style-type: none;
   float: right; }
-  /* line 109, ../sass/screen.scss */
+  /* line 110, ../sass/screen.scss */
   .primary-navigation li {
     float: left; }
-    /* line 112, ../sass/screen.scss */
+    /* line 113, ../sass/screen.scss */
     .primary-navigation li a {
       background: rgba(0, 0, 0, 0.2);
       border-left: 1px solid #999;
@@ -160,11 +160,11 @@ body {
       line-height: 32px;
       padding: 0 20px;
       text-decoration: none; }
-    /* line 125, ../sass/screen.scss */
+    /* line 126, ../sass/screen.scss */
     .primary-navigation li:first-child a {
       border-left: none; }
 
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .container {
   display: inline;
   float: left;
@@ -174,7 +174,7 @@ body {
   * html .container {
     overflow-x: hidden; }
   @media screen and (max-width: 1240px) {
-    /* line 129, ../sass/screen.scss */
+    /* line 130, ../sass/screen.scss */
     .container {
       display: inline;
       float: left;
@@ -184,29 +184,143 @@ body {
       * html .container {
         overflow-x: hidden; } }
 
-/* line 137, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .update-container {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 910px; }
+  width: 910px;
+  margin-bottom: 20px; }
   /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
   * html .update-container {
     overflow-x: hidden; }
 
-/* line 141, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .update-brand-header {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 910px;
-  border-bottom: 1px solid #CCC;
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
   /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
   * html .update-brand-header {
     overflow-x: hidden; }
 
-/* line 148, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
+.collapsible-wrapper {
+  -webkit-box-shadow: inset 0 5px 5px -5px #cccccc;
+  -moz-box-shadow: inset 0 5px 5px -5px #cccccc;
+  box-shadow: inset 0 5px 5px -5px #cccccc;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 910px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(200, 200, 200, 0.1);
+  border: 1px solid #ccc;
+  margin-bottom: 20px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .collapsible-wrapper {
+    overflow-x: hidden; }
+  /* line 159, ../sass/screen.scss */
+  .collapsible-wrapper .collapsible {
+    margin: 7px 0;
+    text-shadow: 0 1px 0 #fff; }
+  /* line 164, ../sass/screen.scss */
+  .collapsible-wrapper .container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    margin-right: 0;
+    width: 910px;
+    -webkit-box-shadow: inset 0 0 10px 0px #cccccc;
+    -moz-box-shadow: inset 0 0 10px 0px #cccccc;
+    box-shadow: inset 0 0 10px 0px #cccccc;
+    background: rgba(170, 170, 170, 0.1);
+    padding: 10px 30px; }
+    /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+    * html .collapsible-wrapper .container {
+      overflow-x: hidden; }
+    /* line 172, ../sass/screen.scss */
+    .collapsible-wrapper .container .content {
+      margin: 0 auto;
+      overflow: hidden;
+      width: 790px; }
+  /* line 181, ../sass/screen.scss */
+  .collapsible-wrapper .dna-container, .collapsible-wrapper .dna-pure,
+  .collapsible-wrapper .dna-simple,
+  .collapsible-wrapper .dna-reward,
+  .collapsible-wrapper .dna-topic {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 190px; }
+    /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+    * html .collapsible-wrapper .dna-container, * html .collapsible-wrapper .dna-pure,
+    * html .collapsible-wrapper .dna-simple,
+    * html .collapsible-wrapper .dna-reward,
+    * html .collapsible-wrapper .dna-topic {
+      overflow-x: hidden; }
+    /* line 184, ../sass/screen.scss */
+    .collapsible-wrapper .dna-container .dna-heading, .collapsible-wrapper .dna-pure .dna-heading,
+    .collapsible-wrapper .dna-simple .dna-heading,
+    .collapsible-wrapper .dna-reward .dna-heading,
+    .collapsible-wrapper .dna-topic .dna-heading {
+      font-family: "Verdana", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase; }
+    /* line 190, ../sass/screen.scss */
+    .collapsible-wrapper .dna-container .dna-topic-list, .collapsible-wrapper .dna-pure .dna-topic-list,
+    .collapsible-wrapper .dna-simple .dna-topic-list,
+    .collapsible-wrapper .dna-reward .dna-topic-list,
+    .collapsible-wrapper .dna-topic .dna-topic-list {
+      list-style-position: inside; }
+  /* line 202, ../sass/screen.scss */
+  .collapsible-wrapper .dna-topic {
+    display: inline;
+    float: left;
+    margin-right: 0;
+    width: 190px; }
+    /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+    * html .collapsible-wrapper .dna-topic {
+      overflow-x: hidden; }
+
+/* line 206, ../sass/screen.scss */
+.collapsible {
+  font-family: "Verdana", sans-serif;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase; }
+  /* line 213, ../sass/screen.scss */
+  .collapsible.collapse-close .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #8a8d8c;
+    padding-bottom: 2px;
+    margin-left: 5px; }
+  /* line 224, ../sass/screen.scss */
+  .collapsible.collapse-open .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #8a8d8c;
+    margin-left: 5px;
+    margin-bottom: 2px; }
+  /* line 235, ../sass/screen.scss */
+  .collapsible:hover {
+    cursor: pointer; }
+
+/* line 242, ../sass/screen.scss */
 .update-brand-info {
   display: inline;
   float: left;
@@ -216,16 +330,33 @@ body {
   * html .update-brand-info {
     overflow-x: hidden; }
 
-/* line 152, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
+.brand-logo-wrapper {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .brand-logo-wrapper {
+    overflow-x: hidden; }
+  /* line 249, ../sass/screen.scss */
+  .brand-logo-wrapper .brand-logo-container {
+    -webkit-box-shadow: inset 5px 4px 10px 10px #cccccc;
+    -moz-box-shadow: inset 5px 4px 10px 10px #cccccc;
+    box-shadow: inset 5px 4px 10px 10px #cccccc;
+    border: 1px solid #ccc;
+    float: right; }
+
+/* line 256, ../sass/screen.scss */
 .page-title {
   font-family: "maven_pro_light_200regular", sans-serif;
   font-size: 50px; }
 
-/* line 158, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .brand-name {
   margin-bottom: 30px; }
 
-/* line 162, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .brand-dna {
   display: inline;
   float: left;
@@ -242,12 +373,12 @@ body {
   /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
   * html .brand-dna {
     overflow-x: hidden; }
-  /* line 174, ../sass/screen.scss */
+  /* line 278, ../sass/screen.scss */
   .brand-dna p {
     font-size: 24px;
     line-height: 30px; }
 
-/* line 180, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .brand-persona {
   display: inline;
   float: left;
@@ -263,18 +394,89 @@ body {
   * html .brand-persona {
     overflow-x: hidden; }
   @media screen and (max-width: 1240px) {
-    /* line 180, ../sass/screen.scss */
+    /* line 284, ../sass/screen.scss */
     .brand-persona {
-      display: none; } }
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: right 0.2s ease-in-out;
+      -moz-transition: right 0.2s ease-in-out;
+      -o-transition: right 0.2s ease-in-out;
+      transition: right 0.2s ease-in-out;
+      background: #666;
+      min-height: 500px;
+      padding: 10px;
+      position: fixed;
+      right: -250px;
+      width: 250px; }
+      /* line 302, ../sass/screen.scss */
+      .brand-persona:before {
+        content: "<";
+        background: #666;
+        font-size: 1.5em;
+        font-weight: 1000;
+        left: -40px;
+        height: 70px;
+        line-height: 70px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        margin-top: -35px;
+        width: 40px; }
+      /* line 317, ../sass/screen.scss */
+      .brand-persona:hover {
+        right: 0; } }
 
-/* line 192, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
+.person-updates {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 230px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 13px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .person-updates {
+    overflow-x: hidden; }
+
+/* line 334, ../sass/screen.scss */
+.person-update {
+  border-top: 1px solid #e9e9e9;
+  overflow: hidden;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px; }
+  /* line 342, ../sass/screen.scss */
+  .person-update:first-child {
+    border-top: none; }
+  /* line 346, ../sass/screen.scss */
+  .person-update .update-person-name {
+    color: #3B5998;
+    font-weight: bold;
+    padding-left: 55px; }
+  /* line 352, ../sass/screen.scss */
+  .person-update .person-image {
+    float: left;
+    width: 45px; }
+  /* line 357, ../sass/screen.scss */
+  .person-update .person-update-text {
+    padding-left: 55px; }
+
+/* line 362, ../sass/screen.scss */
 .persona-title {
   color: #8A8D8C;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px; }
 
-/* line 200, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .inspiration-image {
   display: inline;
   float: left;
@@ -284,7 +486,18 @@ body {
   * html .inspiration-image {
     overflow-x: hidden; }
 
-/* line 204, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
+.update-form-container {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 910px;
+  margin-bottom: 20px; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .update-form-container {
+    overflow-x: hidden; }
+
+/* line 379, ../sass/screen.scss */
 .update-form {
   display: inline;
   float: left;
@@ -298,7 +511,7 @@ body {
   * html .update-form {
     overflow-x: hidden; }
 
-/* line 210, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .update-form-title {
   display: inline;
   float: left;
@@ -311,12 +524,13 @@ body {
   color: #8A8D8C;
   font-size: 22px;
   font-weight: bold;
+  margin-top: -4px;
   margin-bottom: 10px; }
   /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
   * html .update-form-title {
     overflow-x: hidden; }
 
-/* line 220, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .update-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -327,14 +541,111 @@ body {
   padding: 5px;
   width: 100%; }
 
-/* line 241, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
+.button {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 1px 0px #dddddd;
+  -moz-box-shadow: 2px 2px 1px 0px #dddddd;
+  box-shadow: 2px 2px 1px 0px #dddddd;
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, white 50%, whitesmoke 51%, #e5e5e5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(50%, white), color-stop(51%, whitesmoke), color-stop(100%, #e5e5e5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, white 50%, whitesmoke 51%, #e5e5e5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, white 50%, whitesmoke 51%, #e5e5e5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, white 50%, whitesmoke 51%, #e5e5e5 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f5f5f5 51%, #e5e5e5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+  /* IE6-9 */
+  border: 1px solid #999;
+  color: #777;
+  margin: 0;
+  min-width: 100px;
+  padding: 7px 10px;
+  font-weight: bold; }
+  /* line 425, ../sass/screen.scss */
+  .button:hover {
+    background: #f1f1f1;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f1f1f1 0%, #f1f1f1 50%, #e6e6e6 51%, #e6e6e6 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(50%, #f1f1f1), color-stop(51%, #e6e6e6), color-stop(100%, #e6e6e6));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f1f1f1 0%, #f1f1f1 50%, #e6e6e6 51%, #e6e6e6 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f1f1f1 0%, #f1f1f1 50%, #e6e6e6 51%, #e6e6e6 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f1f1f1 0%, #f1f1f1 50%, #e6e6e6 51%, #e6e6e6 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 50%, #e6e6e6 51%, #e6e6e6 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#e6e6e6',GradientType=0 );
+    /* IE6-9 */
+    cursor: pointer; }
+  /* line 437, ../sass/screen.scss */
+  .button:active {
+    background: #c3c3c3;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #c3c3c3 0%, #c3c3c3 50%, #cbcbcb 51%, #cbcbcb 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c3c3c3), color-stop(50%, #c3c3c3), color-stop(51%, #cbcbcb), color-stop(100%, #cbcbcb));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c3c3c3 0%, #c3c3c3 50%, #cbcbcb 51%, #cbcbcb 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #c3c3c3 0%, #c3c3c3 50%, #cbcbcb 51%, #cbcbcb 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #c3c3c3 0%, #c3c3c3 50%, #cbcbcb 51%, #cbcbcb 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #c3c3c3 0%, #c3c3c3 50%, #cbcbcb 51%, #cbcbcb 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c3', endColorstr='#cbcbcb',GradientType=0 );
+    /* IE6-9 */ }
+
+/* line 449, ../sass/screen.scss */
 .update-link {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #999;
   margin-bottom: 15px;
   padding: 5px;
   width: 100%; }
 
-/* line 250, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
+.upload-button-container {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+  margin-bottom: 15px;
+  overflow: hidden; }
+  /* line 147, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .upload-button-container {
+    overflow-x: hidden; }
+  /* line 464, ../sass/screen.scss */
+  .upload-button-container .button {
+    float: left; }
+  /* line 468, ../sass/screen.scss */
+  .upload-button-container .file-path {
+    color: #000;
+    font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px; }
+
+/* line 479, ../sass/screen.scss */
 .update-upload-image {
   display: inline;
   float: left;
@@ -344,26 +655,14 @@ body {
   * html .update-upload-image {
     overflow-x: hidden; }
 
-/* line 254, ../sass/screen.scss */
-.submit-update {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
-  background: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background: -moz-linear-gradient(top, #ffffff, #eeeeee);
-  background: -o-linear-gradient(top, #ffffff, #eeeeee);
-  background: linear-gradient(top, #ffffff, #eeeeee);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: 2px 2px 1px 0px #dddddd;
-  -moz-box-shadow: 2px 2px 1px 0px #dddddd;
-  box-shadow: 2px 2px 1px 0px #dddddd;
-  border: 1px solid #999;
-  color: #777;
-  padding: 7px 10px;
-  font-weight: bold; }
+/* line 483, ../sass/screen.scss */
+#update-upload-image-button {
+  display: none; }
 
-/* line 258, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
+iframe {
+  display: none; }
+
+/* line 491, ../sass/screen.scss */
 ::-webkit-input-placeholder {
   font-style: italic; }
